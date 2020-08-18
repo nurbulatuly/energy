@@ -31,3 +31,5 @@ Route::middleware('auth')->group(function(){
 });
 
 Route::get('/profiles/{user:username}','ProfileController@show')->name('profile.show');
+
+Route::get('/test', 'TestController@test')->name('test');
